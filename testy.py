@@ -22,7 +22,7 @@ def upload_file(filepath):
             creds.refresh(Request())
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
-                'secret_file.json', SCOPES)  # replace with your JSON credentials file
+                'client_secret_june23.json', SCOPES)  # replace with your JSON credentials file
             creds = flow.run_local_server(port=0)
         # Save the credentials for the next run
         with open('token.pickle', 'wb') as token:
